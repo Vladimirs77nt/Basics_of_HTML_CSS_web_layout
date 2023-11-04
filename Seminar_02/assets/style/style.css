@@ -1,0 +1,82 @@
+a {
+    text-decoration: none;
+}
+
+.body {
+    font-family: sans-serif;
+}
+
+.menu {
+    background-color: greenyellow;
+    color: cornflowerblue;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+h1 {
+    color: red;
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: bold;
+}
+
+h2 {
+    color: coral;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 80px;
+}
+
+p {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    color: #7D7987;
+}
+
+.icon {
+    width: 60px;
+}
+
+.icon_2 {
+    width: 150px;
+}
+
+.test_color {
+    color: blue;
+}
+
+.img_mi {
+    border-radius: 20px;
+    width: 20%;
+}
+
+.img_prog {
+    width: 40%;
+}
+
+.form_1 {
+    width: 200px;
+    height: 30px;
+    outline: none;
+    border: 1px solid red;
+    border-radius: 15px;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.button_1 {
+    /* width: 100px;
+    height: 30px; */
+    padding: 10px;
+    border: 1px solid lightgoldenrodyellow;
+    background-color: greenyellow;
+    border-radius: 10px;
+    cursor: pointer
+}
+
+.button_1:hover {
+    background-color: red;
+}

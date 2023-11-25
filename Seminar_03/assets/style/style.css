@@ -1,0 +1,129 @@
+@font-face {
+    font-family: "Open Sans";
+    src: url("../fonts/OpenSans-Regular.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("../fonts/OpenSans-Medium.ttf");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("../fonts/OpenSans-SemiBold.ttf");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("../fonts/OpenSans-Bold.ttf");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("../fonts/OpenSans-ExtraBold.ttf");
+    font-weight: 800;
+}
+
+html {
+    font-family: "Open Sans";
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    background-color: #020A18;
+}
+
+ul {
+    padding: 0;
+}
+
+header {
+    background-color: #020b1b;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.menu-item {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.intro {
+    display: flex;
+    gap: 128px;
+    width: 1146px;
+    margin-top: 160px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.intro-left {}
+
+.intro-upper-title {
+    color: #3A68B8;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 160%;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.intro-title {
+    color: #FFF;
+    font-size: 55px;
+    font-weight: 800;
+    line-height: 130%;
+    margin-bottom: 40px;
+}
+
+.intro-text {
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 160%;
+    opacity: 0.7;
+    margin-bottom: 50px;
+    width: 550px;
+}
+
+.intro-button {
+    padding: 15px 30px;
+    border-radius: 5px;
+    background-color: #3A68B8;
+    color: #FFF;
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.intro-button-wrapper {
+    display: flex;
+    gap: 20px;
+}
+
+.logos {
+    margin-top: 197px;
+    width: 1146px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+}

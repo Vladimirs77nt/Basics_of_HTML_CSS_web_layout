@@ -1,0 +1,91 @@
+@font-face {
+    font-family: "Gilroy-Semibold";
+    src: url("../fonts/gilroy-semibold.ttf");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Gilroy-Bold";
+    src: url("../fonts/gilroy-bold.ttf");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Gilroy-Medium";
+    src: url("../fonts/gilroy-medium.ttf");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Gilroy-Regular";
+    src: url("../fonts/gilroy-regular.ttf");
+    font-style: normal;
+    font-weight: 400;
+}
+
+html {
+    font-family: "Open Sans";
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    background-color: #FFF;
+    
+}
+
+.base-container {
+    width: 1110px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.three-box {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 30px
+}
+
+.box-item {
+    padding: 40px 42px 25px 29px;
+    box-shadow: 15px 25px 56px 6px rgba(0, 0, 0, 0.06);
+}
+
+.box_title {
+    color: #000;
+    margin-top: 25px;
+    font-family: Gilroy-Bold;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.box_text {
+    margin-top: 17px;
+    color: #666;
+    font-family: Gilroy-Regular;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 150%; /* 22.5px */
+}
+
+.box_more {
+    padding: 0;
+    margin-top: 25px;
+    background-color: #FFFFFF;
+    color:#000;
+    font-family: Gilroy-Bold;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 150%; /* 16.5px */
+    border: none;
+    border-style: none;
+}

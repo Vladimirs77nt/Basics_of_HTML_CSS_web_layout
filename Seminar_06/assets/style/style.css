@@ -85,8 +85,8 @@ header {
 
 .intro {
     display: flex;
-    gap: 128px;
     margin-top: 160px;
+    gap: 128px;
 }
 
 .intro-upper-title {
@@ -113,10 +113,11 @@ header {
     line-height: 160%;
     opacity: 0.7;
     margin-bottom: 50px;
-    width: 550px;
+    max-width: 550px;
 }
 
 .intro-button {
+    display: flex;
     padding: 15px 30px;
     border-radius: 5px;
     background-color: #3A68B8;
@@ -125,6 +126,7 @@ header {
     font-size: 20px;
     font-weight: 600;
     line-height: normal;
+    gap: 10px;
 }
 
 .intro-button-wrapper {
@@ -290,4 +292,45 @@ header {
 .footer-social__icon {
     display: flex;
     gap: 24px;
+}
+
+@media (max-width: 1439px) {
+    .base-container,
+    .centerV2 {
+        max-width: 100%;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    .intro,
+    .megamind {
+        flex-direction: column;
+        align-items: center;
+    }
+    .intro-upper-title {
+        font-size: 16px;
+    }
+    .intro-title {
+        font-size: 48px;
+    }
+    .logos {
+        flex-wrap: wrap;
+        max-width: 540px;
+        gap: 32px;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .megamind-right {
+        max-width: 484px;
+        align-items: center;
+    }
+    .blocks {
+        grid-template-columns: 1fr;
+    }
+    .block-4 {
+        display: none;
+    }
+    .block-item {
+        max-width: 362px;
+    }
 }

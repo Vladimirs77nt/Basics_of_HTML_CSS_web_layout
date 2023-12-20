@@ -282,6 +282,10 @@ header {
         margin-left: auto;
         margin-right: auto;
     }
+    /* блок-3 */
+    .blocks {
+        gap: 20px;
+    }
     /* блок-4 */
     .catalog {
         margin-top: 109.9px;

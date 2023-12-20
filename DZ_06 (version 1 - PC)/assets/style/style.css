@@ -1,0 +1,260 @@
+@font-face {
+    font-family: "Lato";
+    src: url("../fonts/Lato-Light.ttf");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url("../fonts/Lato-Regular.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url("../fonts/Lato-Bold.ttf");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url("../fonts/Lato-Black.ttf");
+    font-weight: 900;
+}
+
+html {
+    font-family: "Lato";
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    background-color: #FFF;
+}
+
+ul {
+    padding: 0;
+}
+
+.center {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Блок 1 - верхний блок навигации */
+
+.header-container {
+    background-color: #222;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    gap: 41px;
+}
+
+.header-item-1 {
+    display: flex;
+    align-items: center;
+    gap: 41px;
+    padding: 18px 0;
+}
+
+.header-item-2 {
+    display: flex;
+    align-items: center;
+    gap: 33px;
+}
+
+
+/* Блок 2 - THE BRAND OF LUXERIOUS FASHION */
+
+.header-men-container {
+    background-color: #F1E4E6;
+}
+
+.header-men {
+    max-width: 1600px;
+    /* 1600 - специально!!!*/
+    /* т.к. ширина картинки 800px, а я хочу прижать правый край картинки к центру экрана  */
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center
+}
+
+.header-men-item {
+    width: 50%;
+}
+
+.header-men-right-text {
+    margin-left: 64px;
+    padding-left: 16px;
+    display: flex;
+    flex-direction: column;
+    border-left: 12px #F16D7F solid;
+}
+
+.header-men-text-brand {
+    color: #222;
+    font-family: Lato;
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.header-men-text-line2 {
+    display: flex;
+    gap: 7px
+}
+
+.header-men-text-luxerious {
+    color: #222;
+    font-family: Lato;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.header-men-text-fashion {
+    color: #F16D7F;
+    font-family: Lato;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+
+/* Блок 3 - КАТЕГОРИИ ТОВАРОВ */
+
+.blocks {
+    margin-top: 65px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2fr;
+    gap: 30px;
+}
+
+.block-image {
+    filter: brightness(40%)
+}
+
+.block-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.block-3 {
+    grid-row: span 1;
+    grid-column: span 3;
+}
+
+.block-item-text {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.block-text {
+    color: #FFF;
+    text-align: center;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.block-title {
+    color: #F16D7F;
+    text-align: center;
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+
+/* Блок 4 - КАТАЛОГ */
+
+.catalog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 96px;
+}
+
+.catalog-header {
+    text-align: center;
+    font-family: Lato;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.catalog-text {
+    text-align: center;
+    color: #9F9F9F;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.catalog-blocks {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+    margin-top: 48px;
+}
+
+.catalog-item {
+    background-color: #F8F8F8;
+}
+
+.catalog-item-title {
+    margin-top: 24px;
+    margin-left: 16px;
+    font-family: Lato;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.catalog-item-text {
+    margin-top: 16px;
+    margin-left: 16px;
+    margin-right: 29px;
+    color: #5D5D5D;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.catalog-item-price {
+    margin-top: 16px;
+    margin-left: 16px;
+    color: #F16D7F;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+
+
+/* кнопка */
+
+.catalog-button {
+    margin-top: 46px;
+    background-color: #FFF;
+    color: #F26376;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 15px 39px;
+    border: 1px #FF6A6A solid;
+    margin-bottom: 60px;
+}

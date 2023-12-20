@@ -1,0 +1,18 @@
+h1 {
+    color: yellow;
+}
+.title {
+    color: aqua;
+    font-size: 50px;
+}
+#el1 {
+    /*  */
+}
+.text {
+    background-color: gold;
+}
+.icon, .link {
+    width: 30px;
+    height: 20px;
+    background-color: rgba(120, 230, 220, 0.9);
+}

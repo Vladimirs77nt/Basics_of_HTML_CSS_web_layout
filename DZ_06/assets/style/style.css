@@ -92,7 +92,7 @@ header {
 }
 
 .header-men-right-text {
-    margin-left: 64px;
+    margin-left: 39px;
     padding-left: 16px;
     display: flex;
     flex-direction: column;
@@ -102,7 +102,7 @@ header {
 .header-men-text-brand {
     color: #222;
     font-family: Lato;
-    font-size: 48px;
+    font-size: 44px;
     font-weight: 900;
 }
 
@@ -114,14 +114,14 @@ header {
 .header-men-text-luxerious {
     color: #222;
     font-family: Lato;
-    font-size: 32px;
+    font-size: 24px;
     font-weight: 700;
 }
 
 .header-men-text-fashion {
     color: #F16D7F;
     font-family: Lato;
-    font-size: 32px;
+    font-size: 24px;
     font-weight: 700;
 }
 
@@ -136,8 +136,13 @@ header {
     gap: 30px;
 }
 
-.block-image {
-    filter: brightness(40%)
+.block-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 22, 22, 0.70);
 }
 
 .block-item {
@@ -145,6 +150,10 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.block-image {
+    width: 100%;
 }
 
 .block-3 {
@@ -248,7 +257,7 @@ header {
 /* кнопка */
 
 .catalog-button {
-    margin-top: 46px;
+    margin-top: 32.5px;
     background-color: #FFF;
     color: #F26376;
     font-family: Lato;
@@ -256,5 +265,31 @@ header {
     font-weight: 400;
     padding: 15px 39px;
     border: 1px #FF6A6A solid;
-    margin-bottom: 60px;
+    margin-bottom: 70.5px;
+}
+
+@media (max-width: 1439px) {
+    .center {
+        max-width: 736px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /* блок-2 */
+    .header-men {
+        max-width: 772px;
+        /* 772 - специально!!!*/
+        /* т.к. ширина картинки 386px, а я хочу прижать правый край картинки к центру экрана  */
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /* блок-4 */
+    .catalog {
+        margin-top: 109.9px;
+    }
+    .catalog-blocks {
+        margin-top: 73.7px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+    }
 }

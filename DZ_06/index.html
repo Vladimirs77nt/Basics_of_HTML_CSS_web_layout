@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Домашнее задание 6 / Интернет-магазиг</title>
+    <title>Домашнее задание 7 / Интернет-магазиг</title>
     <link rel="stylesheet" href="./assets/style/style.css">
 </head>
 
@@ -37,7 +37,10 @@
     <div class="header-men-container">
         <section class="header-men">
             <div class="header-men-item">
-                <img src="./assets/img/men_style.png" alt="">
+                <picture>
+                    <source media="(max-width: 1439px)" srcset="./assets/img/men_style-table.png">
+                    <img src="./assets/img/men_style.png" alt="">
+                </picture>
             </div>
             <div class="header-men-item">
                 <div class="header-men-right-text">
@@ -55,6 +58,7 @@
     <section class="blocks center">
         <div class="block-item">
             <img class="block-image" src="./assets/img/for_woman.png">
+            <div class="block-bg"></div>
             <div class="block-item-text">
                 <p class="block-text">30% OFF</p>
                 <h1 class="block-title">FOR WOMEN</h1>
@@ -62,6 +66,7 @@
         </div>
         <div class="block-item">
             <img class="block-image" src="./assets/img/for_men.png ">
+            <div class="block-bg"></div>
             <div class="block-item-text">
                 <p class="block-text ">HOT DEAL</p>
                 <h1 class="block-title ">FOR MEN</h1>
@@ -69,6 +74,7 @@
         </div>
         <div class="block-item">
             <img class="block-image" src="./assets/img/for_kids.png ">
+            <div class="block-bg"></div>
             <div class="block-item-text">
                 <p class="block-text ">NEW ARRIVALS</p>
                 <h1 class="block-title ">FOR KIDS</h1>
@@ -76,6 +82,7 @@
         </div>
         <div class="block-item block-3">
             <img class="block-image" src="./assets/img/accesories.png ">
+            <div class="block-bg"></div>
             <div class="block-item-text">
                 <p class="block-text ">LUXIROUS & TRENDY</p>
                 <h1 class="block-title ">ACCESORIES</h1>
@@ -84,7 +91,7 @@
     </section>
 
     <!-- Блок 4 - КАТАЛОГ -->
-    <section class="catalog center ">
+    <section class="catalog center">
         <!-- загаловок блока каталога -->
         <h1 class="catalog-header ">Fetured Items</h1>
         <h2 class="catalog-text ">Shop for items based on what we featured in this week</h2>
@@ -138,5 +145,7 @@
             Browse All Product
         </button>
     </section>
+
+</body>
 
 </html>

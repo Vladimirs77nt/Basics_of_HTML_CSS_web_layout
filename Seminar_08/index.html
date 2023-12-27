@@ -9,7 +9,18 @@
 </head>
 
 <body>
-
+    <form action="" method="post" class="form-registration">
+        <label>Имя: <input type="text" class="form-reg__input" required autofocus></label>
+        <label>Email: <input type="email" class="form-reg__input" required></label>
+        <label>Пароль: <input type="password" class="form-reg__input" required></label>
+        <label>Возраст: <input type="number" class="form-reg__input" required></label>
+        <label>Дата рождения: <input type="data" class="form-reg__input" required></label>
+        <label>Range: <input type="range" min="1" max="10" value="3" class="form-reg__input" required></label>
+        <label class="reg-form__label checkbox">
+            <input type="checkbox">
+            <div class="checkbox__text">Switch</div>
+        </label>
+    </form>
 </body>
 
 </html>

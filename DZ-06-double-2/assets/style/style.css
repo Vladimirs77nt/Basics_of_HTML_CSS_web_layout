@@ -70,6 +70,14 @@ header {
     gap: 33px;
 }
 
+.header-item-view {
+    fill: #E8E8E8
+}
+
+.header-item-view:first-child {
+    fill: #FF6A6A;
+}
+
 
 /* Блок 2 - THE BRAND OF LUXERIOUS FASHION */
 
@@ -87,12 +95,13 @@ header {
     align-items: center
 }
 
-.header-men-item {
+.header-men-item-1,
+.header-men-item-2 {
     width: 50%;
 }
 
 .header-men-right-text {
-    margin-left: 64px;
+    margin-left: 39px;
     padding-left: 16px;
     display: flex;
     flex-direction: column;
@@ -102,7 +111,7 @@ header {
 .header-men-text-brand {
     color: #222;
     font-family: Lato;
-    font-size: 48px;
+    font-size: 44px;
     font-weight: 900;
 }
 
@@ -114,14 +123,14 @@ header {
 .header-men-text-luxerious {
     color: #222;
     font-family: Lato;
-    font-size: 32px;
+    font-size: 24px;
     font-weight: 700;
 }
 
 .header-men-text-fashion {
     color: #F16D7F;
     font-family: Lato;
-    font-size: 32px;
+    font-size: 24px;
     font-weight: 700;
 }
 
@@ -150,6 +159,10 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.block-image {
+    width: 100%;
 }
 
 .block-3 {
@@ -194,9 +207,7 @@ header {
     text-align: center;
     font-family: Lato;
     font-size: 30px;
-    font-style: normal;
     font-weight: 400;
-    line-height: normal;
 }
 
 .catalog-text {
@@ -204,9 +215,7 @@ header {
     color: #9F9F9F;
     font-family: Lato;
     font-size: 14px;
-    font-style: normal;
     font-weight: 400;
-    line-height: normal;
 }
 
 .catalog-blocks {
@@ -253,7 +262,7 @@ header {
 /* кнопка */
 
 .catalog-button {
-    margin-top: 46px;
+    margin-top: 32.5px;
     background-color: #FFF;
     color: #F26376;
     font-family: Lato;
@@ -261,5 +270,161 @@ header {
     font-weight: 400;
     padding: 15px 39px;
     border: 1px #FF6A6A solid;
-    margin-bottom: 60px;
+    margin-bottom: 70.5px;
+}
+
+
+/* ВЕРСИЯ ДЛЯ ПЛАНШЕТА 768-1439 px */
+
+@media (max-width: 1439px) {
+    .center {
+        max-width: 736px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /* блок-2 */
+    .header-men {
+        max-width: 772px;
+        /* 772 - специально!!!*/
+        /* т.к. ширина картинки 386px, а я хочу прижать правый край картинки к центру экрана  */
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /* блок-3 */
+    .blocks {
+        gap: 20px;
+    }
+    /* блок-4 */
+    .catalog {
+        margin-top: 109.9px;
+    }
+    .catalog-blocks {
+        margin-top: 73.7px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+    }
+}
+
+
+/* ВЕРСИЯ ДЛЯ ТЕЛЕФОНА 375-767 px */
+
+@media (max-width: 767px) {
+    .center {
+        max-width: 343px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /* блок-1 */
+    .header-item-view {
+        display: none;
+    }
+    /* блок-2 */
+    .header-men {
+        height: 363px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .header-men-item-1 {
+        display: none;
+    }
+    .header-men-item-2 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .header-men-right-text {
+        margin-left: 0;
+        padding-left: 16px;
+        display: flex;
+        flex-direction: column;
+        border-left: 12px #F16D7F solid;
+    }
+    .header-men-text-brand {
+        color: #222;
+        font-family: Lato;
+        font-size: 38px;
+        font-weight: 900;
+    }
+    .header-men-text-line2 {
+        display: flex;
+        gap: 7px
+    }
+    .header-men-text-luxerious {
+        color: #222;
+        font-family: Lato;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .header-men-text-fashion {
+        color: #F16D7F;
+        font-family: Lato;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    /* блок-3 */
+    .blocks {
+        max-width: 767px;
+        margin-top: 64px;
+        margin-left: 16px;
+        margin-right: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+    }
+    .block-item {
+        width: 100%;
+    }
+    /* блок-4 */
+    .catalog {
+        margin-top: 64px;
+        max-width: 767px;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+    .catalog-header {
+        text-align: center;
+        font-family: Lato;
+        font-size: 30px;
+        font-weight: 400;
+        margin-top: 3.3px;
+    }
+    .catalog-text {
+        text-align: center;
+        color: #9F9F9F;
+        font-family: Lato;
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .block-image {
+        width: 100%;
+    }
+    .catalog-blocks {
+        margin-top: 64.7px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    .catalog-item-title {
+        margin-top: 25.3px;
+        margin-left: 18px;
+    }
+    .catalog-item-text {
+        margin-top: 12.6px;
+        margin-left: 16.4px;
+        margin-right: 28.7px;
+    }
+    .catalog-item-price {
+        margin-top: 18px;
+        margin-left: 16.4px;
+        margin-bottom: 20px;
+    }
+    .catalog-button {
+        margin-top: 40.6px;
+        padding: 14px 39px;
+        margin-bottom: 85px;
+    }
 }

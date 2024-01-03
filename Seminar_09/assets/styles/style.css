@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+}
+
+.form-registration {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.form-reg__input {
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.form-reg__input:focus {
+    outline: 1px solid red;
+}
+
+.form-registration::before {
+    content: "Регистрация";
+}
+
+.checkbox {
+    position: relative;
+}
+
+.checkbox input {
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.checkbox__text {
+    position: relative;
+}
+
+.checkbox__text::before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: 50px;
+    width: 50px;
+    height: 26px;
+    border-radius: 15px;
+    background-color: grey;
+}
+
+.checkbox__text::after {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: 52px;
+    width: 22px;
+    height: 22px;
+    border-radius: 11px;
+    background-color: red;
+    transition: 0.5s;
+}
+
+.checkbox input:checked+.checkbox__text::before {
+    background-color: yellow;
+}
+
+.checkbox input:checked+.checkbox__text::after {
+    left: 76px;
+}
+
+.about,
+.about-item {
+    background-color: aquamarine;
+}
+
+/* 1. При наведении на любую ссылку цвет текста
+должен стать красным */
+.menu__list:hover,
+.menu__link:hover {
+    color: red
+}
+
+/* 2. При нажатии на ссылку цвет текста должен стать
+зеленым в момент нажатия */
+.menu__link:active {
+    color: green
+}
+
+/* 3. Найти первый элемент списка и добавить нижнее
+подчеркивание ссылке */
+.menu .menu__list:first-child .menu__link {
+    text-decoration: underline;
+}
+
+/* 4. Найти последний элемент списка и добавить ссылке
+жирность font-weight: bold */
+.menu .menu__list:last-child .menu__link {
+    font-weight: bold;
+}
+
+/* 5. У третьей ссылки нужно поменять цвет фона на оранжевый */
+.menu .menu__list:nth-child(3) .menu__link {
+    background-color: orange
+}
+
+.menu__link:focus {
+    color: greenyellow
+}
+
+.box {
+    width: 300px;
+    height: 300px;
+    background-color: violet;
+    position: relative;
+}
+
+.box::before {
+    position: absolute;
+    content: "5";
+    top: 50%;
+    left: 50%;
+}

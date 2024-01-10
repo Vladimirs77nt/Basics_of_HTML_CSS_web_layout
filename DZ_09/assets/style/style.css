@@ -306,6 +306,12 @@ header {
     margin-bottom: 70.5px;
 }
 
+.catalog-button:hover {
+    background-color: #F16D7F;
+    color: #FFF;
+    border: 1px #FFF solid;
+}
+
 
 /* -- Блок 5 - темный блок -- */
 
@@ -467,19 +473,24 @@ footer {
     gap: 7.3px;
 }
 
-.footer__icon::before {
-    content: "F";
+.icon-box {
     width: 32px;
     height: 32px;
-    color: yellow;
+    background-color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .icon-color {
-    fill: red;
+    fill: #000000;
 }
 
-.footer__icon:hover {
-    color: #F16D7F;
+.icon-box:hover {
+    background-color: #F16D7F;
+    .icon-color {
+        fill: #FFF;
+    }
 }
 
 

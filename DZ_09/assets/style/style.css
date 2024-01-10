@@ -222,6 +222,47 @@ header {
     background-color: #F8F8F8;
 }
 
+.catalog-item__img {
+    position: relative;
+}
+
+.catalog-item__img::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    content: "";
+    background-color: rgba(58, 56, 56, 0.86);
+    display: none;
+}
+
+.catalog-item__img:hover::after {
+    display: block;
+}
+
+.catalog-item__button {
+    display: none;
+    width: 139px;
+    height: 44px;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    gap: 11px;
+    border: solid 2px white;
+    color: white;
+    background-color: inherit;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.catalog-item__img:hover .catalog-item__button {
+    display: flex;
+}
+
 .catalog-item-title {
     margin-top: 24px;
     margin-left: 16px;
@@ -265,15 +306,16 @@ header {
     margin-bottom: 70.5px;
 }
 
+
+/* -- Блок 5 - темный блок -- */
+
 .block-05 {
     background-color: #222224;
-    
 }
 
 .blocks-05 {
     display: flex;
     gap: 30px;
-    
 }
 
 .block-05-item {
@@ -304,6 +346,143 @@ header {
     color: #FBFBFB;
 }
 
+
+/* -- Блок 6 - SUBSCRIBE (подписка) -- */
+
+.subscribe {
+    background-image: url(../img/photo_subscribe.png);
+    background-position: center;
+    background-size: cover;
+    height: 448px;
+}
+
+.subscribe_blocks {
+    display: flex;
+    justify-content: space-between;
+    height: 448px;
+}
+
+.subscribe__left {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+.subscribe__right {
+    width: 557px;
+    display: flex;
+    gap: 32px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+.subscribe__comment {
+    width: 360px;
+    color: #222224;
+    text-align: center;
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.subscribe__title {
+    color: #222224;
+    text-align: center;
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 167.2%;
+    /* 40.128px */
+}
+
+.subscribe__text {
+    color: #222224;
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 167.2%;
+}
+
+.subscribe__button {
+    display: flex;
+}
+
+.button__email {
+    width: 234px;
+    height: 49px;
+    background-color: #E1E1E1;
+    border-radius: 25px 0 0 25px;
+    color: #222224;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    border: none;
+    padding-left: 22px;
+}
+
+.button__submit {
+    width: 100px;
+    height: 49px;
+    background-color: #F16D7F;
+    border-radius: 0 25px 25px 0;
+    color: #FFF;
+    text-align: center;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    border: none;
+    padding: 0;
+}
+
+
+/* !-- Блок 7 - FOOTER (подвал) -- */
+
+.footer-container {
+    background-color: #222224;
+}
+
+footer {
+    height: 79px;
+    display: flex;
+    justify-content: space-between;
+    gap: 41px;
+    align-items: center
+}
+
+.footer__text {
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FBFBFB;
+}
+
+.footer__icons {
+    display: flex;
+    gap: 7.3px;
+}
+
+.footer__icon::before {
+    content: "F";
+    width: 32px;
+    height: 32px;
+    color: yellow;
+}
+
+.icon-color {
+    fill: red;
+}
+
+.footer__icon:hover {
+    color: #F16D7F;
+}
+
+
 /* ВЕРСИЯ ДЛЯ ПЛАНШЕТА 768-1439 px */
 
 @media (max-width: 1439px) {
@@ -312,7 +491,6 @@ header {
         margin-left: auto;
         margin-right: auto;
     }
-
     /* блок-2 */
     .header-men {
         max-width: 772px;
@@ -321,17 +499,14 @@ header {
         margin-left: auto;
         margin-right: auto;
     }
-
     /* блок-3 */
     .blocks {
         gap: 20px;
     }
-
     /* блок-4 */
     .catalog {
         margin-top: 109.9px;
     }
-
     .catalog-blocks {
         margin-top: 73.7px;
         display: grid;
@@ -349,12 +524,10 @@ header {
         margin-left: auto;
         margin-right: auto;
     }
-
     /* блок-1 */
     .header-item-view {
         display: none;
     }
-
     /* блок-2 */
     .header-men {
         height: 363px;
@@ -363,17 +536,14 @@ header {
         align-items: center;
         justify-content: center;
     }
-
     .header-men-item-1 {
         display: none;
     }
-
     .header-men-item-2 {
         width: 100%;
         display: flex;
         justify-content: center;
     }
-
     .header-men-right-text {
         margin-left: 0;
         padding-left: 16px;
@@ -381,33 +551,28 @@ header {
         flex-direction: column;
         border-left: 12px #F16D7F solid;
     }
-
     .header-men-text-brand {
         color: #222;
         font-family: Lato;
         font-size: 38px;
         font-weight: 900;
     }
-
     .header-men-text-line2 {
         display: flex;
         gap: 7px
     }
-
     .header-men-text-luxerious {
         color: #222;
         font-family: Lato;
         font-size: 20px;
         font-weight: 700;
     }
-
     .header-men-text-fashion {
         color: #F16D7F;
         font-family: Lato;
         font-size: 20px;
         font-weight: 700;
     }
-
     /* блок-3 */
     .blocks {
         max-width: 767px;
@@ -419,11 +584,9 @@ header {
         align-items: center;
         gap: 32px;
     }
-
     .block-item {
         width: 100%;
     }
-
     /* блок-4 */
     .catalog {
         margin-top: 64px;
@@ -431,7 +594,6 @@ header {
         margin-left: 8px;
         margin-right: 8px;
     }
-
     .catalog-header {
         text-align: center;
         font-family: Lato;
@@ -439,7 +601,6 @@ header {
         font-weight: 400;
         margin-top: 3.3px;
     }
-
     .catalog-text {
         text-align: center;
         color: #9F9F9F;
@@ -447,35 +608,29 @@ header {
         font-size: 14px;
         font-weight: 400;
     }
-
     .block-image {
         width: 100%;
     }
-
     .catalog-blocks {
         margin-top: 64.7px;
         display: grid;
         grid-template-columns: 1fr;
         gap: 16px;
     }
-
     .catalog-item-title {
         margin-top: 25.3px;
         margin-left: 18px;
     }
-
     .catalog-item-text {
         margin-top: 12.6px;
         margin-left: 16.4px;
         margin-right: 28.7px;
     }
-
     .catalog-item-price {
         margin-top: 18px;
         margin-left: 16.4px;
         margin-bottom: 20px;
     }
-
     .catalog-button {
         margin-top: 40.6px;
         padding: 14px 39px;

@@ -70,6 +70,88 @@ header {
     gap: 33px;
 }
 
+.basket-count {
+    position: relative;
+}
+
+.basket-count:after {
+    position: absolute;
+    content: "5";
+    text-align: center;
+    top: -6px;
+    right: -10px;
+    width: 19px;
+    height: 19px;
+    color: white;
+    background-color: #F16D7F;
+    border-radius: 10px;
+    font-family: Lato;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.header-button {
+    border: none;
+    background: none;
+    padding: 0;
+}
+
+.header-button__menu {
+    position: relative;
+}
+
+.menu-content {
+    display: none;
+}
+
+.header-button__menu:hover .menu-content {
+    display: block;
+    position: fixed;
+    top: 74px;
+    right: 0;
+    width: 232px;
+    background-color: #FFF;
+    z-index: 1;
+    padding-bottom: 21px;
+}
+
+.menu-content .a1 {
+    margin-top: 32px;
+    margin-left: 33px;
+    margin-bottom: 4px;
+    color: #000;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    display: block;
+}
+
+.menu-content .a2 {
+    margin-top: 20px;
+    margin-left: 33px;
+    margin-bottom: 12px;
+    color: #F16D7F;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    display: block;
+}
+
+.menu-content .a3 {
+    margin-left: 53.5px;
+    margin-bottom: 11px;
+    color: #6F6E6E;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    display: block;
+}
+
 
 /* Блок 2 - THE BRAND OF LUXERIOUS FASHION */
 
@@ -322,6 +404,8 @@ header {
 .blocks-05 {
     display: flex;
     gap: 30px;
+    padding-top: 104px;
+    padding-bottom: 104px;
 }
 
 .block-05-item {
@@ -329,8 +413,6 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 104px;
-    margin-bottom: 104px;
 }
 
 .block-05__header {
@@ -473,20 +555,21 @@ footer {
     gap: 7.3px;
 }
 
-.icon-box {
+.icon-button {
     width: 32px;
     height: 32px;
     background-color: #FFF;
     display: flex;
     justify-content: center;
     align-items: center;
+    border: none;
 }
 
 .icon-color {
     fill: #000000;
 }
 
-.icon-box:hover {
+.icon-button:hover {
     background-color: #F16D7F;
     .icon-color {
         fill: #FFF;
@@ -523,6 +606,27 @@ footer {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 16px;
+    }
+    .blocks-05 {
+        flex-direction: column;
+        align-items: center;
+        gap: 48.4px;
+        padding-top: 48.2px;
+        padding-bottom: 64px;
+    }
+    .block-05-item {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .subscribe {
+        height: auto;
+    }
+    .subscribe_blocks {
+        margin-top: 64px;
+        margin-bottom: 140px;
+        flex-direction: column;
+        align-items: center;
+        gap: 48px;
     }
 }
 
@@ -622,6 +726,12 @@ footer {
     .block-image {
         width: 100%;
     }
+    /* блок-05  */
+    .blocks-05 {
+        padding-top: 48px;
+        padding-bottom: 81px;
+    }
+    /* каталог */
     .catalog-blocks {
         margin-top: 64.7px;
         display: grid;
@@ -645,6 +755,14 @@ footer {
     .catalog-button {
         margin-top: 40.6px;
         padding: 14px 39px;
-        margin-bottom: 85px;
+        margin-bottom: 96px;
+    }
+    /* footer */
+    footer {
+        padding-top: 43px;
+        padding-bottom: 9px;
+        gap: 40px;
+        height: auto;
+        flex-direction: column-reverse
     }
 }

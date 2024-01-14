@@ -1,0 +1,205 @@
+:root {
+    --primary-red: red;
+}
+* {
+    margin: 0;
+}
+body {
+    margin: 0;
+}
+.slider {
+    height: 1000px;
+}
+.button {
+    font-size: 24px;
+    font-weight: 700;
+}
+.reg-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+}
+.reg-form__input {
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    margin-left: 10px;
+}
+.reg-form__input:focus {
+    outline: 1px solid yellow;
+}
+/* .reg-form::after {
+    content: 'hshf';
+    position: absolute;
+    top: 0;
+    left: 0;
+} */
+.checkbox {
+    position: relative;
+}
+.checkbox input{
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.checkbox__text {
+    position: relative;
+}
+.checkbox__text::before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: 50px;
+    width: 50px;
+    height: 26px;
+    border-radius: 15px;
+    background-color: blue;
+}
+.checkbox__text::after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: 51px;
+    width: 22px;
+    height: 22px;
+    border-radius: 15px;
+    background-color: white;
+    transition: .5s;
+}
+.checkbox input:checked + .checkbox__text::before {
+    background-color: darkorange;
+}
+.checkbox input:checked + .checkbox__text::after {
+    left: 76px;
+}
+/* запятая - к тому и к другому */
+.about, .about-item {
+    background-color: aqua;
+}
+/* пробел - любая вложенность */
+.about .about-item {
+
+}
+h2.about-item__title {
+    font-size: 45px;
+    color: brown;
+}
+/* пробел - любая вложенность */
+/* знак больше - только родитель */
+.about .about-item > .about-item__title {
+    width: 400px;
+}
+.menu__link:focus {
+    color: green;
+}
+.box {
+    width: 500px;
+    height: 400px;
+    background-color: blueviolet;
+    position: relative;
+}
+.box::before {
+    content: '5';
+    font-size: 46px;
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 25px;
+    height: 25px;
+    background-color: red;
+    
+}
+.box::after {
+    content: '10';
+    font-size: 56px;
+    color: white;
+}
+.section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-columns: 1fr; */
+    gap: 30px;
+}
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.item {
+    position: relative;
+}
+.item__img {
+    width: 100%;
+    height: 100%;
+}
+.bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 22, 22, 0.70);
+}
+.services-item__img {
+    position: relative;
+}
+.img {
+
+}
+.services-item__img::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(58, 56, 56, 0.86);
+    display: none;
+}
+.services-item__img:hover::after {
+    display: block;
+}
+.services-item__button {
+    display: none;
+    width: 139px;
+    height: 44px;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    gap: 11px;
+    border: 2px solid white;
+    color: white;
+    background-color: inherit;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+.services-item__img:hover .services-item__button {
+    display: flex;
+}
+.subscribe {
+    background-image: url('../photo_subscribe.png');
+    background-position: center;
+    background-size: cover;
+    height: 448px;
+}
+.test {
+    display: none;
+    opacity: 0;
+    transition: .5s;
+}
+.subscribe:hover + .test {
+    display: block;
+    opacity: 1;
+}
+/* position: fixed;
+top: 75px;
+right: 0; */
